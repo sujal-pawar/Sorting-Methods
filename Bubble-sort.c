@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+// Bubble Sort
 int swap(int *x,int *y)
 {
     int temp = *x;
@@ -35,9 +35,12 @@ int main()
     int A[]= {3,7,9,10,6,5,12,4,11,2};
     int n=sizeof(A) / sizeof(A[0]);
     Bubble(A,n);
+
+    printf("Sorted List :");
+
     for(int i=0; i<n; i++)
     {
-        printf("%d ",A[i]);
+        printf(" %d",A[i]);
     }
     return 0;
 }
