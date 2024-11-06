@@ -11,7 +11,7 @@ int swap(int *x,int *y)
 void Bubble(int A[],int n)
 {
     int i,j;
-    int flag;
+    int flag; // For handling list , which has elements in increasing order
     for(i=0; i<n-1; i++)
     {
         flag=0;
@@ -25,7 +25,7 @@ void Bubble(int A[],int n)
         }
         if(flag==0)
         {
-            break;
+            break; // Loop will break at first or next pass, when no swap is performed
         }
     }
 }
