@@ -1,0 +1,15 @@
+# Ignore build and binary files
+*.o
+*.out
+*.exe
+
+# Ignore IDE/project files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore other temporary files
+*~
