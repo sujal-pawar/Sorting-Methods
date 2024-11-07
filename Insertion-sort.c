@@ -21,6 +21,13 @@ int main(){
   int A[] = {23,7,12,45,31,18,9,4,3,11,29};
 
     int n = sizeof(A)/sizeof(A[0]);
+
+     // Custom Input :
+    // for(int i=0; i<n; i++)
+    // {
+    //     scanf("%d",&A[i]);
+    // }
+
     insertion(A,n);
 
     printf("Sorted Array :");

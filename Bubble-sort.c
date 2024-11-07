@@ -34,6 +34,13 @@ int main()
 {
     int A[]= {3,7,9,10,6,5,12,4,11,2};
     int n=sizeof(A) / sizeof(A[0]);
+
+    // Custom Input :
+    // for(int i=0; i<n; i++)
+    // {
+    //     scanf("%d",&A[i]);
+    // }
+
     Bubble(A,n);
 
     printf("Sorted List :");
