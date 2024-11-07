@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// Selection Sort
 
 void swap(int *x, int *y)
 {
@@ -8,7 +9,7 @@ void swap(int *x, int *y)
     *y = temp;
 }
 
-void selection(int A[], int n)
+void selectionSort(int A[], int n)
 {
     int i, j, k;
     for (i = 0; i < n - 1; i++)
@@ -36,7 +37,7 @@ int main()
     //     scanf("%d",&A[i]);
     // }
 
-    selection(A, n);
+    selectionSort(A, n);
 
     for (int i = 0; i < n; i++)
     {
