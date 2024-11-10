@@ -43,13 +43,24 @@ void IMergeSort(int A[], int n)
         merge(A, 0, p / 2 - 1, n - 1);
     }
 }
+
+void MergeSort(int A[],int l,int h) // Recursive Merge Sort
+{
+    int mid;
+    if(l<h){
+        mid = (l+h)/2;
+        MergeSort(A,l,mid);
+        MergeSort(A,mid+1,h);
+        merge(A,l,mid,h);
+    }
+}
 int main()
 {
 
     int A[] = {3, 7, 1, 6, 8, 9, 11, 10, 15, 12, 0,23,20};
     int n = sizeof(A) / sizeof(A[0]); 
 
-    IMergeSort(A, n);
+    MergeSort(A,0,n-1); // Recursive Merge Sort
 
     printf("Sorted Array: ");
     for (int i = 0; i < n; i++)
