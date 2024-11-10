@@ -60,6 +60,11 @@ int main()
     int A[] = {3, 7, 1, 6, 8, 9, 11, 10, 15, 12, 0,23,20};
     int n = sizeof(A) / sizeof(A[0]); 
 
+    // Custom Input
+    // for (int i=0;i<n;i++){
+    //     scanf("%d",&A[i]);
+    // }
+
     MergeSort(A,0,n-1); // Recursive Merge Sort
 
     printf("Sorted Array: ");
