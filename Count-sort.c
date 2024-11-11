@@ -20,7 +20,6 @@ void CountSort(int A[],int n){
     max = findMax(A,n);
     C = (int *)malloc(sizeof(int)*(max+1));
     
-    
     for(i=0;i<max+1;i++){
         C[i] = 0;
     }

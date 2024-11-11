@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// Quick Sort
 
 void swap(int *x, int *y)
 {
@@ -27,9 +28,9 @@ int partition(int A[], int l, int h)
 
 void quickSort(int A[], int l, int h){
     if(l<h){
-       int j = partition(A,l,h);
-       quickSort(A,l,j-1);
-       quickSort(A,j+1,h);
+       int j = partition(A,l,h); 
+       quickSort(A,l,j-1); // For first partition 
+       quickSort(A,j+1,h);// For second partition 
     }
 }
 
@@ -51,5 +52,6 @@ int main()
     {
         printf(" %d", A[i]);
     }
+
     return 0;
 }
